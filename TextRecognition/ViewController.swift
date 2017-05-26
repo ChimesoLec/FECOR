@@ -33,7 +33,7 @@ class ViewController: UIViewController,G8TesseractDelegate,UIImagePickerControll
         // Dispose of any resources that can be recreated.
     }
     
-    @nonobjc func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
 
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imgView.image = pickedImage
